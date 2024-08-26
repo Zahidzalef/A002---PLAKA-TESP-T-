@@ -26,10 +26,10 @@ class MainActivity : AppCompatActivity() {
         var kod = binding.editText2.text.toString()
         when(kod) {
             "1" -> sehirr = "Adana"
-            "2" -> sehirr = a
-            "3" -> sehirr = a
-            "4" -> sehirr = a
-            "5" -> sehirr = a
+            "2" -> sehirr = "Adıyaman"
+            "3" -> sehirr = "Afyonkarahisar"
+            "4" -> sehirr = "Ağrı"
+            "5" -> sehirr = "Amasya"
             "6" -> sehirr = a
             "7" -> sehirr = a
             "8" -> sehirr = a
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
             "39" -> sehirr = a
             "40" -> sehirr = a
             "41" -> sehirr = a
-            "42" -> sehirr = a
+            "42" -> sehirr = "Konya"
             "43" -> sehirr = a
             "44" -> sehirr = a
             "45" -> sehirr = a
@@ -116,10 +116,11 @@ class MainActivity : AppCompatActivity() {
         var sehir = binding.editText1.text.toString()
         when (sehir) {
             "adana"  -> sehirrr = 1
-            "Konaya" -> sehirrr = 2
-            "Ko1nya" -> sehirrr = 3
-            "Kaonya" -> sehirrr = 4
-            "Kon2ya" -> sehirrr = 5
+            "adıyaman" -> sehirrr = 2
+            "afyon" -> sehirrr = 3
+            "afyonkarahisar" -> sehirrr = 3
+            "ağrı" -> sehirrr = 4
+            "amasya" -> sehirrr = 5
             "Konyda" -> sehirrr = 6
             "Ko3nya" -> sehirrr = 7
             "Konsya" -> sehirrr = 8
@@ -156,7 +157,8 @@ class MainActivity : AppCompatActivity() {
             "Konppa" -> sehirrr = 39
             "Kon//a" -> sehirrr = 40
             "Konya/" -> sehirrr = 41
-            "Konya"  -> sehirrr = 42
+            "konya"  -> sehirrr = 42
+            "gonya" -> sehirrr = 42
             "Konıya"  -> sehirrr = 43
             "Koınya"  -> sehirrr = 44
             "Konya*"  -> sehirrr = 45
@@ -198,7 +200,7 @@ class MainActivity : AppCompatActivity() {
             "Kottnya"  -> sehirrr = 81
 
         }
-        binding.textView.text = "${sehirrr} "
+        binding.textView.text = "Plaka : ${sehirrr} "
     }
     fun main(sayi:Int,kelime:String){
         if (sayi == 1 || kelime =="Adana") {
